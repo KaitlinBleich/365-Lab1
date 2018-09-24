@@ -66,13 +66,15 @@ public class schoolsearch {
                 break;
 
             String[] array2 = in.split(": ");
-            String[] array3 = array2[1].split(" ");
+            String[] array3 = new String[2];
+            System.out.println(array3[1]);
+            array3 = array2[1].split(" ");
             System.out.println(array3[1]);
 
-            if(array3[1].equals("B") || array3[1].equals("Bus"))
+            if(array3[1] != null && (array3[1].equals("B") || array3[1].equals("Bus")))
             {
                 for (int i = 0; i < line; i++) {
-                    if (array2[1].equals(myData[i][0])) {
+                    if (array3[0].equals(myData[i][0])) {
                         System.out.println("LastName " + myData[i][0]);
                         System.out.println("FirstName " + myData[i][1]);
                         System.out.println("BusRoute " + myData[i][4]);
