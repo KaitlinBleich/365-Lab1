@@ -49,7 +49,7 @@ public class schoolSearch {
             case "B":
             case "Bus":
                 for (int i = 0; i < line; i++) {
-                    if (array[1].equals(data[i][4])) {
+                    if (array[1].equals(data[i][6])) {
                         System.out.println("FirstName:\t" + data[i][1]);
                         System.out.println("LastName:\t" + data[i][0]);
                         System.out.println();
@@ -68,11 +68,11 @@ public class schoolSearch {
                         if (Double.parseDouble(data[l][5]) > high && /*greatest GPA */
                               array[1].equals(data[l][2]))           /* with given score*/
                         {
-                        System.out.println("---NEW---");
+                        /*System.out.println("---NEW---");
                         System.out.println(high);
                         System.out.println(data[l][0]);
                         System.out.println(data[l][5]);
-                        System.out.println("-------------");
+                        System.out.println("-------------");*/
                            fName = data[l][1];
                            lName = data[l][0];
                            GPA   = data[l][5];
@@ -100,11 +100,11 @@ public class schoolSearch {
                      if (Double.parseDouble(data[l][5]) <= low && /*greatest GPA */
                            array[1].equals(data[l][2]))           /* with given score*/
                      {
-                        System.out.println("---NEW---");
+                        /*System.out.println("---NEW---");
                         System.out.println(low);
                         System.out.println(data[l][0]);
                         System.out.println(data[l][5]);
-                        System.out.println("-------------");
+                        System.out.println("-------------");*/
                            fName = data[l][1];
                            lName = data[l][0];
                            GPA   = data[l][5];
@@ -166,7 +166,6 @@ public class schoolSearch {
                 }
                 break;
             default:
-                System.out.println("I hate you");
         }
     }
 
@@ -193,7 +192,6 @@ public class schoolSearch {
 
         while (!in.equals("Q") && !in.equals("Quit")){
             in = input.nextLine();
-            System.out.println("before Call");
 
             if(in.equals("Q") || in.equals("Quit"))
                 break;
