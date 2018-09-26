@@ -1,11 +1,11 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 import java.lang.*;
 
 public class schoolSearch {
-
     private static void switchStatement(String[] array, String[][] data, int line)
     {
                            String fName = "";
@@ -22,17 +22,14 @@ public class schoolSearch {
            case "Student":
                 for (int i = 0; i < line; i++) {
                     if (array[1].equals(data[i][0])) {
-                        System.out.println("LastName:\t" + data[i][0]);
-                        System.out.println("FirstName:\t" + data[i][1]);
+                        System.out.print(data[i][0] + ", "+ data[i][1] + ", ");
                         if(array.length == 3)
                         {
                             if(array[2].equals("B") || array[2].equals("Bus"))
-                                System.out.println("BusRoute:\t" + data[i][4]);
+                                System.out.print(data[i][4] + "\n");
                         }
                         else {
-                            System.out.println("Grade:\t\t" + data[i][2]);
-                            System.out.println("Classroom:\t" + data[i][3]);
-                            System.out.println("Teacher:\t" + data[i][7] + " " + data[i][6]);
+                            System.out.println(data[i][2]+ ", "+ data[i][3] +", "+ data[i][7] + " " + data[i][6]);
                         }
                     }
                 }
@@ -41,18 +38,15 @@ public class schoolSearch {
             case "Teacher":
                 for (int i = 0; i < line; i++) {
                     if (array[1].equals(data[i][6])) {
-                        System.out.println("LastName:\t" + data[i][0]);
-                        System.out.println("FirstName:\t" + data[i][1] + "\n");
+                        System.out.println(data[i][0] + ", " + data[i][1]);
                     }
                 }
                 break;
             case "B":
             case "Bus":
                 for (int i = 0; i < line; i++) {
-                    if (array[1].equals(data[i][6])) {
-                        System.out.println("FirstName:\t" + data[i][1]);
-                        System.out.println("LastName:\t" + data[i][0]);
-                        System.out.println();
+                    if (array[1].equals(data[i][4])) {
+                        System.out.println(data[i][1] + " " + data[i][0]);
                     }
                 }
                 break;
@@ -62,6 +56,8 @@ public class schoolSearch {
                 double low  = 0;
                 if(array.length == 3)
                 {
+                    if(Integer.parseInt(array[1]) > 6)
+                        break;
                    if(array[2].equals("H") || array[2].equals("High"))
                    {
                      for (int l = 0; l < line; l++) {
@@ -152,6 +148,8 @@ public class schoolSearch {
                 break;
             case "I":
             case "Info":
+                if(array.length != 1)
+                    break;
                 for (int i = 0; i<=6; i++)
                 {
                    int students = 0;
@@ -170,15 +168,22 @@ public class schoolSearch {
     }
 
     public static void main(String[] args) throws Exception {
-        FileReader file = new FileReader("students.txt");
+
+        File file = new File("students.txt");
+        if(!file.exists())
+        {
+            System.out.println("FIle not exists.");
+            System.exit(1);
+        }
+
         String[][] myData = new String[1000][8];
-        BufferedReader bufRead = new BufferedReader(file);
+        Scanner Read = new Scanner(file);
         String myLine;
         int line = 0;
 
         // putting it in 2d array
-        while ((myLine = bufRead.readLine()) != null) {
-            String[] array1 = myLine.split(",");
+        while (Read.hasNextLine()) {
+            String[] array1 = Read.nextLine().split(",");
             for (int i = 0; i < array1.length; i++) {
                 myData[line][i] = array1[i];
             }
@@ -186,7 +191,7 @@ public class schoolSearch {
         }
 
         // start of the loop
-        System.out.println("Enter whatever ");
+        System.out.println("Enter command ");
         Scanner input = new Scanner(System.in);
         String in = "start";
 
