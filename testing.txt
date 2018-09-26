@@ -1,0 +1,123 @@
+// CSC 365 - Spring 2017
+// Kaitlin Bleich - Kyaw Soe
+// Lab 1-1 test suite
+//
+// TC-1
+// Tests R4
+// expected output: OOKUS, XUAN, 3, 107, ROCIO FAFARD
+S: OOKUS
+
+// TC-2
+// Tests R4
+// expected output: WOOLERY, NOLAN, 51
+S: WOOLERY B
+
+// TC-3
+// Tests R4
+// expected output: WOOLERY, NOLAN, 51
+S: WOOLERY Bus
+
+// TC-4
+// Tests R4
+// expected output: WOOLERY, NOLAN, 51
+Student: WOOLERY Bus
+
+// TC-5
+// Tests R4
+// expected output: WOOLERY, NOLAN, 51
+T: OBREIN
+
+Teacher: OBREIN
+
+// TC-6
+// LastName: OOKUS
+// FirstName:   XUAN
+// LastName: ELHADDAD
+// FirstName:   SHANTE
+// LastName: BRODERSEN
+// FirstName:   HYE
+// LastName: SWEDLUND
+// FirstName:   SHARRI
+// LastName: CIGANEK
+// FirstName:   MANIE
+// LastName: COVINGTON
+// FirstName:   TOMAS
+// LastName: EARLY
+// FirstName:   TORY
+// LastName: LINHART
+// FirstName:   LELA
+// LastName: THEUNISSEN
+// FirstName:   GRACE
+G: 3
+
+// TC-6
+//
+// LastName: OOKUS
+// FirstName:   XUAN
+// LastName: ELHADDAD
+// FirstName:   SHANTE
+// LastName: BRODERSEN
+// FirstName:   HYE
+// LastName: SWEDLUND
+// FirstName:   SHARRI
+// LastName: CIGANEK
+// FirstName:   MANIE
+// LastName: COVINGTON
+// FirstName:   TOMAS
+// LastName: EARLY
+// FirstName:   TORY
+// LastName: LINHART
+// FirstName:   LELA
+// LastName: THEUNISSEN
+// FirstName:   GRACE
+Grade: 3
+
+
+B: 102
+
+Bus: 102
+
+// TC - 9
+// tests R7
+// Expected: SHARRI SWEDLUND, 3.24, FAFARD, 55
+//
+G: 3 H
+
+// TC - 9
+// tests R7
+// Expected: MANIE CIGANEK, 2.79, FAFARD, 53
+G: 3 L
+
+// TC - 10
+// tests R7
+// Same expectations as TC-
+Grade: 3 H
+
+// TC - 11
+// tests R7
+// Same expectations as TC-
+Grade: 3 L
+
+// TC - 
+// tests R10
+// Expectation: 3 - Average is 3.0488
+A: 3
+
+// TC - 
+// tests R10
+// Expectation: 3 - Average is 3.0488
+Average: 3
+
+/* TC - 
+ * tests R11
+ * 0: 0
+ * 1: 2
+ * 2: 13
+ * 3: 9
+ * 4: 15
+ * 5: 0
+ * 6: 21
+*/
+I:
+
+Info:
