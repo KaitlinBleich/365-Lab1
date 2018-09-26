@@ -27,5 +27,6 @@ User input was stored in a one dimensional array created via .split() on ":" and
 3)
    Index out of bounds when checking for 3rd element:
       Soe - .5 hr
+	  - FileNotFound check - .2 hr
    R11 index out of bounds
       Kaitlin - 46 minutes, for loop was using <= instead of <

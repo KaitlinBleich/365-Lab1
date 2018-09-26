@@ -1,5 +1,3 @@
-// Kaitlin Bleich, Kyaw Soe
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -193,7 +191,7 @@ public class schoolSearch {
         }
 
         // start of the loop
-        System.out.println("Enter command ");
+        System.out.println("Enter command :");
         Scanner input = new Scanner(System.in);
         String in = "start";
 
@@ -206,6 +204,7 @@ public class schoolSearch {
             String[] array2 = in.split(": | ");
 
             switchStatement(array2, myData, line);
+            System.out.println("Enter command :");
         }
     }
 }
