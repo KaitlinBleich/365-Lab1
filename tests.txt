@@ -1,200 +1,21 @@
-// CSC 365 - Spring 2017
-// Kaitlin Bleich - Kyaw Soe
-// Lab 1-1 test suite
-
-// TC-1
-// Test Requirements R4
-// student existing
-// expected output: COOKUS, XUAN, 3, 107, ROCIO FAFARD
 S: COOKUS
-
-// TC-2
-// Test Requirements R5
-// student with bus exisiting
-// expected output:   WOOLERY, NOLAN, 51
 S: WOOLERY B
-
-// TC-3
-// Test Requirements R5
-// student with bus "Bus" existing
-// expected output:   WOOLERY, NOLAN, 51
 S: WOOLERY Bus
-
-// TC-4
-// Test Requirements R5
-// student with bus "Bus" & "Student" existing
-// expected output: WOOLERY, NOLAN, 51
 Student: WOOLERY Bus
-
-// TC-5
-// Test Requirements R6
-// short and long form of Teacher, existing
-/* expected output: LIBRANDI, TODD
-                    HAVIR, BOBBIE
-                    SARAO, DIEDRA
-                    VANCOTT, MIKE
-                    WICINSKY, TERESE
-                    KOZOLA, BUSTER
-                    MULLINGS, LEIGHANN
-                    BUSSMANN, BILLY
-                    BERBES, DICK
-                    MULGREW, RANDELL
-                    TOWLEY, LANE
-
-                    LIBRANDI, TODD
-                    HAVIR, BOBBIE
-                    SARAO, DIEDRA
-                    VANCOTT, MIKE
-                    WICINSKY, TERESE
-                    KOZOLA, BUSTER
-                    MULLINGS, LEIGHANN
-                    BUSSMANN, BILLY
-                    BERBES, DICK
-                    MULGREW, RANDELL
-                    TOWLEY, LANE
-                    */
 T: HAMER
 Teacher: HAMER
-
-// TC-6
-// Test Requirements R7
-// Grade testing short & long
-// expected output
-/*
-LastName:       COOKUS
-FirstName:      XUAN
-LastName:       ELHADDAD
-FirstName:      SHANTE
-LastName:       BRODERSEN
-FirstName:      HYE
-LastName:       SWEDLUND
-FirstName:      SHARRI
-LastName:       CIGANEK
-FirstName:      MANIE
-LastName:       COVINGTON
-FirstName:      TOMAS
-LastName:       EARLY
-FirstName:      TORY
-LastName:       LINHART
-FirstName:      LELA
-LastName:       THEUNISSEN
-FirstName:      GRACE
-
-LastName:       COOKUS
-FirstName:      XUAN
-LastName:       ELHADDAD
-FirstName:      SHANTE
-LastName:       BRODERSEN
-FirstName:      HYE
-LastName:       SWEDLUND
-FirstName:      SHARRI
-LastName:       CIGANEK
-FirstName:      MANIE
-LastName:       COVINGTON
-FirstName:      TOMAS
-LastName:       EARLY
-FirstName:      TORY
-LastName:       LINHART
-FirstName:      LELA
-LastName:       THEUNISSEN
-FirstName:      GRACE
-*/
 G: 3
 Grade: 3
-
-// TC - 7
-// Test Requirements E1
-// non-existant file
-// Expected: software to exit with code 1
-
-// TC - 8
-// Test Requirements R7
-// Grade testing with H
-// Expected: SHARRI SWEDLUND, 3.24, FAFARD, 55
-//
 G: 3 H
-
-// TC - 9
-// Test Requirements R7
-// Grade testing with L
-// Expected: MANIE CIGANEK, 2.79, FAFARD, 53
 G: 3 L
-
-// TC - 10
-// Test Requirements R7
-// Grade testing non-exist
-// Expected:
 Grade: 10 H
-
-// TC - 11
-// Test Requirements R7
-// Same expectations as TC-
 Grade: 3 L
-
-// TC - 12
-// Test Requirements R10
-// Expectation: 3 - Average is 3.0488
 A: 3
-
-// TC - 13
-// Test Requirements R10
-// Expectation: 3 - Average is 3.0488
 Average: 3
-
-// TC - 14
-// Test Requirements R11
-// 0: 0
-// 1: 2
-// 2: 13
-// 3: 9
-// 4: 15
-// 5: 0
-// 6: 21
-I:
-
-// TC - 15
-// Test Requirements R8
-// Bus short and long form non existing
-// expected output :
+I
+Info
 B: 102
 Bus: 102
-
-// TC - 16
-// Test Requirements R8
-// Bus short and long form non existing
-// expected output :
-/*
-ERVIN OGAS
-CODI GUICE
-JANNETTE BREVO
-MIKE VANCOTT
-HUNG GLOR
-DANILO SAELEE
-NOAH GUM
-DICK BERBES
-RANDELL MULGREW
-ROLLAND NOVICK
-GRACE THEUNISSEN
-LANE TOWLEY
-
-ERVIN OGAS
-CODI GUICE
-JANNETTE BREVO
-MIKE VANCOTT
-HUNG GLOR
-DANILO SAELEE
-NOAH GUM
-DICK BERBES
-RANDELL MULGREW
-ROLLAND NOVICK
-GRACE THEUNISSEN
-LANE TOWLEY
-*/
 B: 54
 Bus: 54
-
-// TC - 17
-// Test Requirements R3, R13
-// quit command
-// expected output: program terminates
 Q

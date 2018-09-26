@@ -1,0 +1,32 @@
+Team Awesome - Kyaw Soe, Kaitlin Bleich
+
+Kaitlin Bleich programmed on the school servers using vim
+Kyaw Soe worked in IntelliJ
+
+We used a 2-dimensional array that was pre-populated (before getting user input) with all information in students file. It is 1000 rows long and 8 columns wide.
+User input was stored in a one dimensional array created via .split() on ":" and "|".
+
+2)
+  Program:
+   Soe: 5 hours
+      Sep 24: 3pm-6pm
+      Sep 25: 6pm-8pm
+   Kaitlin: 6 hours (I'm slow)
+      Sep 24: 3pm-6pm
+      Sep 25: 9pm-12am
+
+  Testing:
+   Soe: 
+      Sep 26: 10-12
+   Kaitlin:
+      Sep 26: 10-12
+
+   WriteUp:
+   Kaitlin: 2 hours
+
+3)
+   Index out of bounds when checking for 3rd element:
+      Soe - .5 hr
+	  - FileNotFound check - .2 hr
+   R11 index out of bounds
+      Kaitlin - 46 minutes, for loop was using <= instead of <
